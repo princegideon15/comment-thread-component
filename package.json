@@ -1,0 +1,11 @@
+{
+  "name": "comment-thread-plain-component",
+  "version": "1.0.0",
+  "description": "Display latest comment in the table, Add comments and replies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gerard Balde",
+  "license": "ISC"
+}
