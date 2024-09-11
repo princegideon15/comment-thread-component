@@ -40,29 +40,28 @@
         </tbody>
         </table>
 
-       
-
+        <!-- Code Preview -->
         <div class="row">
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-a-html-tab" data-bs-toggle="pill" data-bs-target="#pills-a-html" type="button" role="tab" aria-controls="pills-a-html" aria-selected="true">Home</button>
+                                <button class="nav-link active" id="pills-a-html-tab" data-bs-toggle="pill" data-bs-target="#pills-a-html" type="button" role="tab" aria-controls="pills-a-html" aria-selected="true">HTML</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-a-react-tab" data-bs-toggle="pill" data-bs-target="#pills-a-react" type="button" role="tab" aria-controls="pills-a-react" aria-selected="false">Profile</button>
+                                <button class="nav-link" id="pills-a-react-tab" data-bs-toggle="pill" data-bs-target="#pills-a-react" type="button" role="tab" aria-controls="pills-a-react" aria-selected="false">React</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-a-vue-tab" data-bs-toggle="pill" data-bs-target="#pills-a-vue" type="button" role="tab" aria-controls="pills-a-vue" aria-selected="false">Contact</button>
+                                <button class="nav-link" id="pills-a-vue-tab" data-bs-toggle="pill" data-bs-target="#pills-a-vue" type="button" role="tab" aria-controls="pills-a-vue" aria-selected="false">Vue</button>
                             </li>
                             <li class="nav-item ms-auto">
-                                <button class="btn btn-outline-dark" onclick="copyToClipboard(this)">Copy</button>
+                                <button class="btn btn-outline-dark" onclick="copyToClipboard(this, 'pills-a-tabContent')">Copy</button>
                             </li>
                             </ul>
                     </div>
                     <div class="card-body p-0">
-                        <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-content" id="pills-a-tabContent">
                             <div class="tab-pane fade active show" id="pills-a-html" role="tabpanel" aria-labelledby="pills-a-html-tab">
                                 <pre class="mt-0"><code class="language-html">
                                     &lt;table class="table table-hover table-bordered">
@@ -166,7 +165,7 @@
             </div>
         </div>
 
-        <h5 class="mt-5">Opened comment</h5>
+        <h5 class="mt-5">Opened Comment</h5>
         <p>Comment opened already.</p>
         <table class="table table-hover table-bordered">
             <thead class="table-dark">
@@ -210,49 +209,190 @@
         </tbody>
         </table>
 
-        <h5 class="mt-5">Unread Latest Comment</h5>
-        <p>Latest comment unopened. Font weight set to bold.</p>
-        <table class="table table-hover table-bordered">
-            <thead class="table-dark">
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">First column</th>
-                <th scope="col">Second column</th>
-                <th scope="col" width="30%">Comment</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <th scope="row">1</th>
-            <td>Lorem Ipsum 1</td>
-            <td>Lorem Ipsum 2</td>
-            <td>
-                <div class="card bg-light rounded-4" style="cursor:pointer">
-                    <div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
-                        <!-- Replace src based on your actual directory and file -->
-                        <img src="/public/default.png" alt="..." class="rounded-circle"  style="height:auto; width:auto; max-height:24px; max-width:26px">
-                        <div class="d-flex flex-column col" style="width:inherit !important">
-                            <div class="d-flex justify-content-between gap-4">
-                                <div class="card-title text-truncate fs-6 fw-bold">
-                                    <!-- Username -->
-                                    Juan Dela Cruz
-                                </div>
-                                <div class="text-end fs-6 fw-bold">
-                                    <!-- Latest comment date & time -->
-                                    08 Aug 2024 01:06 PM
-                                </div>
+        <!-- Code Preview -->
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-b-html-tab" data-bs-toggle="pill" data-bs-target="#pills-b-html" type="button" role="tab" aria-controls="pills-b-html" aria-selected="true">HTML</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-b-react-tab" data-bs-toggle="pill" data-bs-target="#pills-b-react" type="button" role="tab" aria-controls="pills-b-react" aria-selected="false">React</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-b-vue-tab" data-bs-toggle="pill" data-bs-target="#pills-b-vue" type="button" role="tab" aria-controls="pills-b-vue" aria-selected="false">Vue</button>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <button class="btn btn-outline-dark" onclick="copyToClipboard(this, 'pills-b-tabContent')">Copy</button>
+                            </li>
+                            </ul>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="tab-content" id="pills-b-tabContent">
+                            <div class="tab-pane fade active show" id="pills-b-html" role="tabpanel" aria-labelledby="pills-b-html-tab">
+                                <pre class="mt-0"><code class="language-html">
+                                    &lt;table class="table table-hover table-bordered">
+                                        &lt;thead class="table-dark">
+                                            &lt;tr>
+                                            &lt;th scope="col">...&lt;/th>
+                                            &lt;th scope="col">...&lt;/th>
+                                            &lt;th scope="col">...&lt;/th>
+                                            &lt;th scope="col" width="30%">...&lt;/th>
+                                            &lt;/tr>
+                                        &lt;/thead>
+                                        &lt;tbody>
+                                        &lt;tr>
+                                            &lt;th scope="row">...&lt;/th>
+                                            &lt;td>...&lt;/td>
+                                            &lt;td>...&lt;/td>
+                                            &lt;td>
+                                                &lt;div class="card bg-light rounded-4" style="cursor:pointer">
+                                                    &lt;div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                        &lt;img src="/public/default.png" alt="..." class="rounded-circle"  style="height:auto; width:auto; max-height:24px; max-width:26px">
+                                                        &lt;div class="d-flex flex-column col" style="width:inherit !important">
+                                                            &lt;div class="d-flex justify-content-between gap-4">
+                                                                &lt;div class="card-title text-truncate text-xs">
+                                                                    Juan Dela Cruz
+                                                                &lt;/div>
+                                                                &lt;div class="text-end text-muted text-xxs">
+                                                                    08 Aug 2024 01:06 PM
+                                                                &lt;/div>
+                                                            &lt;/div>
+                                                            &lt;p class="card-text text-truncate text-xs" style="width:300px !important">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                            &lt;/p>
+                                                        &lt;/div>
+                                                    &lt;/div>
+                                                &lt;/div>
+                                            &lt;/td>
+                                            &lt;/tr>
+                                        &lt;/tbody>
+                                    &lt;/table>
+                                </code></pre>
                             </div>
-                            <p class="card-text text-truncate fs-6 fw-bold" style="width:300px !important">
-                                <!-- Cemment content here -->
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                            </p>
+                            <div class="tab-pane fade" id="pills-b-react" role="tabpanel" aria-labelledby="pills-b-react-tab">
+                                <pre class="mt-0"><code class="language-html">
+                                    import React from 'react';
+                                    import './styles.css'; // Assuming you have a CSS file for styling
+
+                                    const TableComponent = () => {
+                                      return (
+                                        &lt;table className="table table-hover table-bordered">
+                                          &lt;thead className="table-dark">
+                                            &lt;tr>
+                                              &lt;th scope="col">...&lt;/th>
+                                              &lt;th scope="col">...&lt;/th>
+                                              &lt;th scope="col">...&lt;/th>
+                                              &lt;th scope="col" style={{ width: '30%' }}>...&lt;/th>
+                                            &lt;/tr>
+                                          &lt;/thead>
+                                          &lt;tbody>
+                                            &lt;tr>
+                                              &lt;th scope="row">...&lt;/th>
+                                              &lt;td>...&lt;/td>
+                                              &lt;td>...&lt;/td>
+                                              &lt;td>
+                                                &lt;div className="card bg-light rounded-4" style={{ cursor: 'pointer' }}>
+                                                  &lt;div className="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                    &lt;img 
+                                                      src="/public/default.png" 
+                                                      alt="..." 
+                                                      className="rounded-circle" 
+                                                      style={{ height: 'auto', width: 'auto', maxHeight: '24px', maxWidth: '26px' }} 
+                                                    />
+                                                    &lt;div className="d-flex flex-column col" style={{ width: 'inherit !important' }}>
+                                                      &lt;div className="d-flex justify-content-between gap-4">
+                                                        &lt;div className="card-title text-truncate text-xs">
+                                                          Juan Dela Cruz
+                                                        &lt;/div>
+                                                        &lt;div className="text-end text-muted text-xxs">
+                                                          08 Aug 2024 01:06 PM
+                                                        &lt;/div>
+                                                      &lt;/div>
+                                                      &lt;p className="card-text text-truncate text-xs" style={{ width: '300px !important' }}>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                      &lt;/p>
+                                                    &lt;/div>
+                                                  &lt;/div>
+                                                &lt;/div>
+                                              &lt;/td>
+                                            &lt;/tr>
+                                          &lt;/tbody>
+                                        &lt;/table>
+                                      );
+                                    };
+                                    
+                                    export default TableComponent;
+                                    
+                                      
+                                </code></pre>
+                            </div>
+                            <div class="tab-pane fade" id="pills-b-vue" role="tabpanel" aria-labelledby="pills-b-vue-tab">
+                                <pre class="mt-0"><code class="language-html">
+                                    &lt;template>
+                                        &lt;table class="table table-hover table-bordered">
+                                          &lt;thead class="table-dark">
+                                            &lt;tr>
+                                              &lt;th scope="col">...&lt;/th>
+                                              &lt;th scope="col">...&lt;/th>
+                                              &lt;th scope="col">...&lt;/th>
+                                              &lt;th scope="col" style="width: 30%;">...&lt;/th>
+                                            &lt;/tr>
+                                          &lt;/thead>
+                                          &lt;tbody>
+                                            &lt;tr>
+                                              &lt;th scope="row">...&lt;/th>
+                                              &lt;td>...&lt;/td>
+                                              &lt;td>...&lt;/td>
+                                              &lt;td>
+                                                &lt;div class="card bg-light rounded-4" style="cursor: pointer;">
+                                                  &lt;div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                    &lt;img 
+                                                      src="/public/default.png" 
+                                                      alt="..." 
+                                                      class="rounded-circle" 
+                                                      style="height: auto; width: auto; max-height: 24px; max-width: 26px;" 
+                                                    />
+                                                    &lt;div class="d-flex flex-column col" style="width: inherit !important;">
+                                                      &lt;div class="d-flex justify-content-between gap-4">
+                                                        &lt;div class="card-title text-truncate text-xs">
+                                                          Juan Dela Cruz
+                                                        &lt;/div>
+                                                        &lt;div class="text-end text-muted text-xxs">
+                                                          08 Aug 2024 01:06 PM
+                                                        &lt;/div>
+                                                      &lt;/div>
+                                                      &lt;p class="card-text text-truncate text-xs" style="width: 300px !important;">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                      &lt;/p>
+                                                    &lt;/div>
+                                                  &lt;/div>
+                                                &lt;/div>
+                                              &lt;/td>
+                                            &lt;/tr>
+                                          &lt;/tbody>
+                                        &lt;/table>
+                                      &lt;/template>
+                                      
+                                      &lt;script>
+                                      export default {
+                                        name: 'TableComponent',
+                                      };
+                                      &lt;/script>
+                                      
+                                      &lt;style scoped>
+                                      /* Add scoped styles if necessary */
+                                      &lt;/style>
+                                      
+                                </code></pre>
+                            </div>
                         </div>
                     </div>
-                  </div>
-            </td>
-            </tr>
-        </tbody>
-        </table>
+                </div>
+            </div>
+        </div>
 
         <h5 class="mt-5">Open Comment Modal</h5>
         <p>Click comment area to open comment modal.</p>
@@ -297,7 +437,433 @@
             </tr>
         </tbody>
         </table>
+
+        
+        <!-- Code Preview -->
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-c-html-tab" data-bs-toggle="pill" data-bs-target="#pills-c-html" type="button" role="tab" aria-controls="pills-c-html" aria-selected="true">HTML</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-c-react-tab" data-bs-toggle="pill" data-bs-target="#pills-c-react" type="button" role="tab" aria-controls="pills-c-react" aria-selected="false">React</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-c-vue-tab" data-bs-toggle="pill" data-bs-target="#pills-c-vue" type="button" role="tab" aria-controls="pills-c-vue" aria-selected="false">Vue</button>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <button class="btn btn-outline-dark" onclick="copyToClipboard(this, 'pills-c-tabContent')">Copy</button>
+                            </li>
+                            </ul>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="tab-content" id="pills-c-tabContent">
+                            <div class="tab-pane fade active show" id="pills-c-html" role="tabpanel" aria-labelledby="pills-c-html-tab">
+                                <pre class="mt-0"><code class="language-html">
+                                    &lt;div class="card bg-light rounded-4" style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        &lt;div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                            &lt;img src="/public/default.png" alt="..." class="rounded-circle"  style="height:auto; width:auto; max-height:24px; max-width:26px">
+                                            &lt;div class="d-flex flex-column col" style="width:inherit !important">
+                                                &lt;div class="d-flex justify-content-between gap-4">
+                                                    &lt;div class="card-title text-truncate fs-6 fw-bold">
+                                                        Juan Dela Cruz
+                                                    &lt;/div>
+                                                    &lt;div class="text-end fs-6 fw-bold">
+                                                        08 Aug 2024 01:06 PM
+                                                    &lt;/div>
+                                                &lt;/div>
+                                                &lt;p class="card-text text-truncate fs-6 fw-bold" style="width:300px !important">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                &lt;/p>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    &lt;/div>
+
+                                    &lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        &lt;div class="modal-dialog modal-lg modal-dialog-centered">
+                                            &lt;div class="modal-content">
+                                                &lt;div class="modal-header">
+                                                &lt;h1 class="modal-title fs-5" id="exampleModalLabel">Comments&lt;/h1>
+                                                &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&lt;/button>
+                                                &lt;/div>
+                                                &lt;div class="modal-body">
+                                                    &lt;div class="card bg-body-secondary rounded-4" style="cursor:pointer">
+                                                        &lt;div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                            &lt;!-- Replace src based on your actual directory and file -->
+                                                            &lt;img src="/public/default.png" alt="..." class="rounded-circle"  style="height:auto; width:auto; max-height:45px; max-width:48px">
+                                                            &lt;div class="d-flex flex-column col" style="width:inherit !important">
+                                                                &lt;div class="d-flex justify-content-between gap-4">
+                                                                    &lt;div class="card-title text-truncate fs-6">
+                                                                        &lt;!-- Username -->
+                                                                        Juan Dela Cruz &lt;span class="badge rounded-pill text-bg-secondary">Administrator&lt;/span>
+                                                                    &lt;/div>
+                                                                    &lt;div class="text-end fs-6">
+                                                                        &lt;!-- Latest comment date & time -->
+                                                                        08 Aug 2024 01:06 PM
+                                                                    &lt;/div>
+                                                                &lt;/div>
+                                                                &lt;p class="card-text fs-6">
+                                                                    &lt;!-- Cemment content here -->
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                                &lt;/p>
+                                                            &lt;/div>
+                                                        &lt;/div>
+                                                        &lt;div class="card-footer d-flex justify-content-between">
+                                                            &lt;div class="ms-5">
+                                                                &lt;a class="btn btn-sm btn-light mb-0 rounded-pill border border-secondary text-truncate shadow-none px-3">&lt;i class="fas fa-file-pdf text-danger me-1">&lt;/i>sample.pdf&lt;/a>
+                                                            &lt;/div>
+                                                            &lt;div class="d-flex">
+                                                                &lt;a href="#" class="btn">&lt;i class="fas fa-reply text-dark">&lt;/i>&lt;/a>
+                                                                &lt;a href="#" class="btn">&lt;i class="fas fa-comments text-dark me-1">&lt;/i>0&lt;/a>
+                                                            &lt;/div>
+                                                        &lt;/div>
+                                                    &lt;/div>
+                                                    &lt;!-- Comment with reply -->
+                                                    &lt;div class="card bg-body-secondary rounded-4 mt-3 " style="cursor:pointer">
+                                                        &lt;div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                            &lt;!-- Replace src based on your actual directory and file -->
+                                                            &lt;img src="/public/default.png" alt="..." class="rounded-circle"  style="height:auto; width:auto; max-height:45px; max-width:48px">
+                                                            &lt;div class="d-flex flex-column col" style="width:inherit !important">
+                                                                &lt;div class="d-flex justify-content-between gap-4">
+                                                                    &lt;div class="card-title text-truncate fs-6">
+                                                                        &lt;!-- Username -->
+                                                                        Maria Delos Reyes &lt;span class="badge rounded-pill text-bg-secondary">Proponent&lt;/span>
+                                                                    &lt;/div>
+                                                                    &lt;div class="text-end fs-6">
+                                                                        &lt;!-- Latest comment date & time -->
+                                                                        08 Aug 2024 01:06 PM
+                                                                    &lt;/div>
+                                                                &lt;/div>
+                                                                &lt;p class="card-text fs-6">
+                                                                    &lt;!-- Cemment content here -->
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                                &lt;/p>
+                                                            &lt;/div>
+                                                        &lt;/div>
+                                                        &lt;div class="card-footer d-flex justify-content-between">
+                                                            &lt;div class="ms-5">
+                                                                &lt;a class="btn btn-sm btn-light mb-0 rounded-pill border border-secondary text-truncate shadow-none px-3">&lt;i class="fas fa-file-image text-danger me-1">&lt;/i>sample.jpg&lt;/a>
+                                                            &lt;/div>
+                                                            &lt;div class="d-flex">
+                                                                &lt;a href="#" class="btn">&lt;i class="fas fa-reply text-dark">&lt;/i>&lt;/a>
+                                                                &lt;a href="#" class="btn">&lt;i class="fas fa-comments text-dark me-1">&lt;/i>1&lt;/a>
+                                                            &lt;/div>
+                                                        &lt;/div>
+                                                    &lt;/div>
+                                                    &lt;!-- Replies -->
+                                                    &lt;div class="row">
+                                                        &lt;div class="col">&lt;/div>
+                                                        &lt;div class="col-10 border border-3 border-top-0 border-end-0 border-bottom-0  ps-5">
+                                                            &lt;div class="card bg-body-secondary rounded-4 mt-3" style="cursor:pointer">
+                                                                &lt;div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                                    &lt;!-- Replace src based on your actual directory and file -->
+                                                                    &lt;img src="/public/default.png" alt="..." class="rounded-circle"  style="height:auto; width:auto; max-height:45px; max-width:48px">
+                                                                    &lt;div class="d-flex flex-column col" style="width:inherit !important">
+                                                                        &lt;div class="d-flex justify-content-between gap-4">
+                                                                            &lt;div class="card-title text-truncate fs-6">
+                                                                                &lt;!-- Username -->
+                                                                                Maria Delos Reyes &lt;span class="badge rounded-pill text-bg-secondary">Proponent&lt;/span>
+                                                                            &lt;/div>
+                                                                            &lt;div class="text-end fs-6">
+                                                                                &lt;!-- Latest comment date & time -->
+                                                                                08 Aug 2024 01:06 PM
+                                                                            &lt;/div>
+                                                                        &lt;/div>
+                                                                        &lt;p class="card-text fs-6">
+                                                                            &lt;!-- Cemment content here -->
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                                                        &lt;/p>
+                                                                    &lt;/div>
+                                                                &lt;/div>
+                                                                &lt;div class="card-footer d-flex justify-content-between">
+                                                                    &lt;div class="ms-5">
+                                                                        &lt;a class="btn btn-sm btn-light mb-0 rounded-pill border border-secondary text-truncate shadow-none px-3">&lt;i class="fas fa-file-image text-danger me-1">&lt;/i>sample.jpg&lt;/a>
+                                                                    &lt;/div>
+                                                                    &lt;div class="d-flex">
+                                                                        &lt;a href="#" class="btn">&lt;i class="fas fa-pen">&lt;/i>&lt;/a>
+                                                                        &lt;a href="#" class="btn">&lt;i class="far fa-trash-alt text-danger">&lt;/i>&lt;/a>
+                                                                    &lt;/div>
+                                                                &lt;/div>
+                                                            &lt;/div>
+                                                            &lt;!-- Send Reply Thread -->
+                                                            &lt;div class="card border-0 rounded-4 mt-2" style="cursor:pointer">
+                                                                &lt;div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                                    &lt;!-- Replace src based on your actual directory and file -->
+                                                                    &lt;img src="/public/default.png" alt="..." class="rounded-circle"  style="height:auto; width:auto; max-height:45px; max-width:48px">
+                                                                    &lt;div class="border border-dark rounded-4 w-100 p-2">
+                                                                        &lt;textarea class="comment-textarea w-100" placeholder="Reply to this thread..." style="border:0; resize: none; outline:none">&lt;/textarea>
+                                                                        &lt;div class="d-flex justify-content-between">
+                                                                            &lt;div class="d-flex justify-content-between align-items-center border border-dark  rounded border border-secondary text-bg-light">
+                                                                                &lt;p class="p-1 mb-0 text-dark px-2 text-truncate">File.pdf&lt;/p>
+                                                                                &lt;button type="button" class="btn text-danger font-weight-bold">&lt;i class="far fa-window-close">&lt;/i>&lt;/button>
+                                                                            &lt;/div>
+                                                                            &lt;div class="d-flex">
+                                                                                &lt;a href="#" class="btn">&lt;i class="fas fa-paperclip">&lt;/i>&lt;/a>
+                                                                                &lt;a href="#" class="btn">&lt;i class="fas fa-paper-plane text-info">&lt;/i>&lt;/a>
+                                                                            &lt;/div>
+                                                                        &lt;/div>
+                                                                    
+                                                                    &lt;/div>
+                                                                    
+                                                                &lt;/div>
+                                                            &lt;/div>
+                                                        &lt;/div>
+                                                    &lt;/div>
+                                                    &lt;!-- Send Comment Thread -->
+                                                    &lt;div class="card border-0 rounded-4 mt-2" style="cursor:pointer">
+                                                        &lt;div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                            &lt;!-- Replace src based on your actual directory and file -->
+                                                            &lt;img src="/public/default.png" alt="..." class="rounded-circle"  style="height:auto; width:auto; max-height:45px; max-width:48px">
+                                                            &lt;div class="border border-dark rounded-4 w-100 p-2">
+                                                                &lt;textarea class="comment-textarea w-100" placeholder="Write a new comment..." style="border:0; resize: none; outline:none">&lt;/textarea>
+                                                                &lt;div class="d-flex justify-content-between">
+                                                                    &lt;div class="d-flex justify-content-between align-items-center border border-dark  rounded border border-secondary text-bg-light">
+                                                                        &lt;p class="p-1 mb-0 text-dark px-2 text-truncate">File.pdf&lt;/p>
+                                                                        &lt;button type="button" class="btn text-danger font-weight-bold">&lt;i class="far fa-window-close">&lt;/i>&lt;/button>
+                                                                    &lt;/div>
+                                                                    &lt;div class="d-flex">
+                                                                        &lt;a href="#" class="btn">&lt;i class="fas fa-paperclip">&lt;/i>&lt;/a>
+                                                                        &lt;a href="#" class="btn">&lt;i class="fas fa-paper-plane text-info">&lt;/i>&lt;/a>
+                                                                    &lt;/div>
+                                                                &lt;/div>
+                                                            
+                                                            &lt;/div>
+                                                            
+                                                        &lt;/div>
+                                                    &lt;/div>
+                                                &lt;/div>
+                                                &lt;div class="modal-footer">
+                                                    &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close&lt;/button>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    &lt;/div>
+                                </code></pre>
+                            </div>
+                            <div class="tab-pane fade" id="pills-c-react" role="tabpanel" aria-labelledby="pills-c-react-tab">
+                                <pre class="mt-0"><code class="language-html">
+                                    import React, { useState } from 'react';
+
+                                    const CommentsComponent = () => {
+                                      const [showModal, setShowModal] = useState(false);
+                                    
+                                      return (
+                                        &lt;div>
+                                          &lt;!-- Card with user info -->
+                                          &lt;div className="card bg-light rounded-4" style={{ cursor: 'pointer' }} onClick={() => setShowModal(true)}>
+                                            &lt;div className="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                              &lt;img src="/public/default.png" alt="..." className="rounded-circle" style={{ maxHeight: '24px', maxWidth: '26px' }} />
+                                              &lt;div className="d-flex flex-column col" style={{ width: 'inherit' }}>
+                                                &lt;div className="d-flex justify-content-between gap-4">
+                                                  &lt;div className="card-title text-truncate fs-6 fw-bold">Juan Dela Cruz&lt;/div>
+                                                  &lt;div className="text-end fs-6 fw-bold">08 Aug 2024 01:06 PM&lt;/div>
+                                                &lt;/div>
+                                                &lt;p className="card-text text-truncate fs-6 fw-bold" style={{ width: '300px' }}>
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                &lt;/p>
+                                              &lt;/div>
+                                            &lt;/div>
+                                          &lt;/div>
+                                    
+                                          &lt;!-- Modal -->
+                                          {showModal && (
+                                            &lt;div className="modal fade show d-block" style={{ background: 'rgba(0, 0, 0, 0.5)' }}>
+                                              &lt;div className="modal-dialog modal-lg modal-dialog-centered">
+                                                &lt;div className="modal-content">
+                                                  &lt;div className="modal-header">
+                                                    &lt;h1 className="modal-title fs-5" id="exampleModalLabel">Comments&lt;/h1>
+                                                    &lt;button type="button" className="btn-close" onClick={() => setShowModal(false)} aria-label="Close">&lt;/button>
+                                                  &lt;/div>
+                                                  &lt;div className="modal-body">
+                                                    &lt;!-- Comment Card -->
+                                                    &lt;div className="card bg-body-secondary rounded-4" style={{ cursor: 'pointer' }}>
+                                                      &lt;div className="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                        &lt;img src="/public/default.png" alt="..." className="rounded-circle" style={{ maxHeight: '45px', maxWidth: '48px' }} />
+                                                        &lt;div className="d-flex flex-column col">
+                                                          &lt;div className="d-flex justify-content-between gap-4">
+                                                            &lt;div className="card-title text-truncate fs-6">Juan Dela Cruz &lt;span className="badge rounded-pill text-bg-secondary">Administrator&lt;/span>&lt;/div>
+                                                            &lt;div className="text-end fs-6">08 Aug 2024 01:06 PM&lt;/div>
+                                                          &lt;/div>
+                                                          &lt;p className="card-text fs-6">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                          &lt;/p>
+                                                        &lt;/div>
+                                                      &lt;/div>
+                                                      &lt;div className="card-footer d-flex justify-content-between">
+                                                        &lt;div className="ms-5">
+                                                          &lt;a className="btn btn-sm btn-light mb-0 rounded-pill border border-secondary text-truncate shadow-none px-3">&lt;i className="fas fa-file-pdf text-danger me-1">&lt;/i>sample.pdf&lt;/a>
+                                                        &lt;/div>
+                                                        &lt;div className="d-flex">
+                                                          &lt;a href="#" className="btn">&lt;i className="fas fa-reply text-dark">&lt;/i>&lt;/a>
+                                                          &lt;a href="#" className="btn">&lt;i className="fas fa-comments text-dark me-1">&lt;/i>0&lt;/a>
+                                                        &lt;/div>
+                                                      &lt;/div>
+                                                    &lt;/div>
+                                    
+                                                    &lt;!-- Reply Card -->
+                                                    &lt;div className="card bg-body-secondary rounded-4 mt-3" style={{ cursor: 'pointer' }}>
+                                                      &lt;div className="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                        &lt;img src="/public/default.png" alt="..." className="rounded-circle" style={{ maxHeight: '45px', maxWidth: '48px' }} />
+                                                        &lt;div className="d-flex flex-column col">
+                                                          &lt;div className="d-flex justify-content-between gap-4">
+                                                            &lt;div className="card-title text-truncate fs-6">Maria Delos Reyes &lt;span className="badge rounded-pill text-bg-secondary">Proponent&lt;/span>&lt;/div>
+                                                            &lt;div className="text-end fs-6">08 Aug 2024 01:06 PM&lt;/div>
+                                                          &lt;/div>
+                                                          &lt;p className="card-text fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p>
+                                                        &lt;/div>
+                                                      &lt;/div>
+                                                      &lt;div className="card-footer d-flex justify-content-between">
+                                                        &lt;div className="ms-5">
+                                                          &lt;a className="btn btn-sm btn-light mb-0 rounded-pill border border-secondary text-truncate shadow-none px-3">&lt;i className="fas fa-file-image text-danger me-1">&lt;/i>sample.jpg&lt;/a>
+                                                        &lt;/div>
+                                                        &lt;div className="d-flex">
+                                                          &lt;a href="#" className="btn">&lt;i className="fas fa-reply text-dark">&lt;/i>&lt;/a>
+                                                          &lt;a href="#" className="btn">&lt;i className="fas fa-comments text-dark me-1">&lt;/i>1&lt;/a>
+                                                        &lt;/div>
+                                                      &lt;/div>
+                                                    &lt;/div>
+                                    
+                                                    &lt;!-- Send Comment Thread -->
+                                                    &lt;div className="card border-0 rounded-4 mt-2">
+                                                      &lt;div className="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                        &lt;img src="/public/default.png" alt="..." className="rounded-circle" style={{ maxHeight: '45px', maxWidth: '48px' }} />
+                                                        &lt;div className="border border-dark rounded-4 w-100 p-2">
+                                                          &lt;textarea className="comment-textarea w-100" placeholder="Write a new comment..." style={{ border: '0', resize: 'none', outline: 'none' }}>&lt;/textarea>
+                                                          &lt;div className="d-flex justify-content-between">
+                                                            &lt;div className="d-flex justify-content-between align-items-center border border-dark rounded px-2">
+                                                              &lt;p className="p-1 mb-0 text-dark text-truncate">File.pdf&lt;/p>
+                                                              &lt;button type="button" className="btn text-danger">&lt;i className="far fa-window-close">&lt;/i>&lt;/button>
+                                                            &lt;/div>
+                                                            &lt;div className="d-flex">
+                                                              &lt;a href="#" className="btn">&lt;i className="fas fa-paperclip">&lt;/i>&lt;/a>
+                                                              &lt;a href="#" className="btn">&lt;i className="fas fa-paper-plane text-info">&lt;/i>&lt;/a>
+                                                            &lt;/div>
+                                                          &lt;/div>
+                                                        &lt;/div>
+                                                      &lt;/div>
+                                                    &lt;/div>
+                                    
+                                                  &lt;/div>
+                                                  &lt;div className="modal-footer">
+                                                    &lt;button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>Close&lt;/button>
+                                                  &lt;/div>
+                                                &lt;/div>
+                                              &lt;/div>
+                                            &lt;/div>
+                                          )}
+                                        &lt;/div>
+                                      );
+                                    };
+                                    
+                                    export default CommentsComponent;
+                                    
+                                </code></pre>
+                            </div>
+                            <div class="tab-pane fade" id="pills-c-vue" role="tabpanel" aria-labelledby="pills-c-vue-tab">
+                                <pre class="mt-0"><code class="language-html">
+                                    &lt;template>
+                                        &lt;div>
+                                          &lt;!-- Card Component -->
+                                          &lt;div class="card bg-light rounded-4" style="cursor:pointer" @click="openModal">
+                                            &lt;div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                              &lt;img :src="profileImage" alt="..." class="rounded-circle" style="height:auto; width:auto; max-height:24px; max-width:26px" />
+                                              &lt;div class="d-flex flex-column col" style="width:inherit !important">
+                                                &lt;div class="d-flex justify-content-between gap-4">
+                                                  &lt;div class="card-title text-truncate fs-6 fw-bold">
+                                                    {{ username }}
+                                                  &lt;/div>
+                                                  &lt;div class="text-end fs-6 fw-bold">
+                                                    {{ commentDate }}
+                                                  &lt;/div>
+                                                &lt;/div>
+                                                &lt;p class="card-text text-truncate fs-6 fw-bold" style="width:300px !important">
+                                                  {{ commentText }}
+                                                &lt;/p>
+                                              &lt;/div>
+                                            &lt;/div>
+                                          &lt;/div>
+                                      
+                                          &lt;!-- Modal -->
+                                          &lt;div v-if="isModalOpen" class="modal fade show d-block" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            &lt;div class="modal-dialog modal-lg modal-dialog-centered">
+                                              &lt;div class="modal-content">
+                                                &lt;div class="modal-header">
+                                                  &lt;h1 class="modal-title fs-5" id="exampleModalLabel">Comments&lt;/h1>
+                                                  &lt;button type="button" class="btn-close" @click="closeModal" aria-label="Close">&lt;/button>
+                                                &lt;/div>
+                                                &lt;div class="modal-body">
+                                                  &lt;!-- Comment Card -->
+                                                  &lt;div class="card bg-body-secondary rounded-4" style="cursor:pointer">
+                                                    &lt;div class="card-body d-flex gap-1 gap-2 mb-0 p-2">
+                                                      &lt;img :src="profileImage" alt="..." class="rounded-circle" style="height:auto; width:auto; max-height:45px; max-width:48px" />
+                                                      &lt;div class="d-flex flex-column col" style="width:inherit !important">
+                                                        &lt;div class="d-flex justify-content-between gap-4">
+                                                          &lt;div class="card-title text-truncate fs-6">
+                                                            {{ username }} &lt;span class="badge rounded-pill text-bg-secondary">Administrator&lt;/span>
+                                                          &lt;/div>
+                                                          &lt;div class="text-end fs-6">
+                                                            {{ commentDate }}
+                                                          &lt;/div>
+                                                        &lt;/div>
+                                                        &lt;p class="card-text fs-6">
+                                                          {{ commentText }}
+                                                        &lt;/p>
+                                                      &lt;/div>
+                                                    &lt;/div>
+                                                  &lt;/div>
+                                                &lt;/div>
+                                                &lt;div class="modal-footer">
+                                                  &lt;button type="button" class="btn btn-secondary" @click="closeModal">Close&lt;/button>
+                                                &lt;/div>
+                                              &lt;/div>
+                                            &lt;/div>
+                                          &lt;/div>
+                                        &lt;/div>
+                                      &lt;/template>
+                                      
+                                      &lt;script>
+                                      export default {
+                                        data() {
+                                          return {
+                                            isModalOpen: false,
+                                            username: "Juan Dela Cruz",
+                                            commentDate: "08 Aug 2024 01:06 PM",
+                                            commentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+                                            profileImage: "/public/default.png",
+                                          };
+                                        },
+                                        methods: {
+                                          openModal() {
+                                            this.isModalOpen = true;
+                                          },
+                                          closeModal() {
+                                            this.isModalOpen = false;
+                                          },
+                                        },
+                                      };
+                                      &lt;/script>
+                                      
+                                      &lt;style scoped>
+                                      .modal.show {
+                                        display: block;
+                                        background-color: rgba(0, 0, 0, 0.5);
+                                      }
+                                      &lt;/style>
+                                      
+                                      
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -464,10 +1030,13 @@
 
     <script>
         // Function to copy the code block content
-        function copyToClipboard(element) {
-            const activeTabPane = document.querySelector('.tab-pane.fade.active.show');
-            const preElement = document.getElementById(activeTabPane.id).querySelector('pre code');
-            const codeText = preElement.textContent;
+        function copyToClipboard(element, tabPaneId) {
+            console.log("🚀 ~ copyToClipboard ~ element, tabPaneId:", tabPaneId)
+            const parentDiv = document.getElementById(tabPaneId);
+            const activeTabPane = parentDiv.querySelector('.tab-pane.fade.active.show');
+            console.log("🚀 ~ copyToClipboard ~ activeTabPane:", activeTabPane.id)
+            const codeElement = activeTabPane.querySelector('pre code');
+            const codeText = codeElement.textContent;
 
             const tempElement = document.createElement('textarea');
             tempElement.value = codeText;
